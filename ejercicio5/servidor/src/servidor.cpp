@@ -127,7 +127,6 @@ int Servidor::aceptarConexion() {
 
   bool salaLlena = false;
   TransmisionMensajes::enviarMensaje(socketCliente, &salaLlena, sizeof(bool));
-  cout << "Conexion aceptada" << endl;
   return socketCliente;
 }
 
